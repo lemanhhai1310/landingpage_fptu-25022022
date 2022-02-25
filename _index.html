@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -9,14 +10,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css" />
-    <link rel="stylesheet" href="style.css?v=1645809689">
+    <link rel="stylesheet" href="style.css?v=1645820450">
     <!--JS-->
     <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
-    <script src="js/app.js?v=1645809689"></script>
+    <script src="js/app.js?v=1645820450"></script>
 </head>
 <body class="">
 <!-- Load Facebook SDK for JavaScript -->
@@ -46,7 +47,19 @@
         }(document, 'script', 'facebook-jssdk'));
     }, 5000);
 </script><!--app-->
-<div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative"><div class="uk-position-relative">
+<div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+    <div id="offcanvas-flip-menu" class="menuMobile" uk-offcanvas="flip: false; overlay: true">
+        <div class="uk-offcanvas-bar menuMobile__bar">
+            <ul uk-scrollspy-nav="closest: li; scroll: true" class="menuMobile__nav uk-nav-default uk-nav-parent-icon uk-nav-divider" uk-nav="multiple: false;toggle: .menuMobile__nav__icon;collapsible:false;">
+                <li><a href="#home">TRANG CHỦ</a></li>
+                <li><a href="#taisao">TẠI SAO CHỌN ĐH FPT?</a></li>
+                <li><a href="#tuyensinh">THÔNG BÁO TUYỂN SINH</a></li>
+                <li><a href="#daotao">CHUYÊN NGÀNH ĐÀO TẠO</a></li>
+                <li><a href="#dangky">ĐĂNG KÝ HỌC</a></li>
+                <li><a href="#">ĐĂNG NHẬP</a></li>
+            </ul>
+        </div>
+    </div><div class="uk-position-relative" id="home">
     <div class="home__block01 uk-flex uk-flex-middle uk-background-center-center uk-background-norepeat" data-src="images/1x/bg1.png" uk-img>
         <div class="home__block01__section uk-section uk-width-1-1">
             <div class="uk-container">
@@ -95,29 +108,31 @@
             </div>
         </div>
     </div>
-    <div class="uk-position-top home__header">
-        <div class="uk-container">
-            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-                <div class="uk-navbar-left uk-visible@m">
-                    <a href="" class="uk-navbar-item uk-logo uk-background-default"><img src="images/1x/logo.png" alt=""></a>
-                </div>
-                <div class="uk-navbar-center uk-hidden@m">
-                    <a href="" class="uk-navbar-item uk-logo uk-background-default"><img src="images/1x/logo.png" alt=""></a>
-                </div>
-                <div class="uk-navbar-right">
-                    <a class="uk-navbar-toggle uk-hidden@m" href="#">
-                        <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
-                    </a>
-                    <ul class="uk-navbar-nav uk-visible@m">
-                        <li><a href="#">TRANG CHỦ</a></li>
-                        <li><a href="#">TẠI SAO CHỌN ĐH FPT?</a></li>
-                        <li><a href="#">THÔNG BÁO TUYỂN SINH</a></li>
-                        <li><a href="#">CHUYÊN NGÀNH ĐÀO TẠO</a></li>
-                        <li><a href="#">ĐĂNG KÝ HỌC</a></li>
-                        <li><a href="#">ĐĂNG NHẬP</a></li>
-                    </ul>
-                </div>
-            </nav>
+    <div uk-sticky>
+        <div class="uk-position-fixed uk-position-top home__header">
+            <div class="uk-container">
+                <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                    <div class="uk-navbar-left uk-visible@m">
+                        <a href="." class="uk-navbar-item uk-logo uk-background-default"><img src="images/1x/logo.png" alt=""></a>
+                    </div>
+                    <div class="uk-navbar-center uk-hidden@m">
+                        <a href="." class="uk-navbar-item uk-logo uk-background-default"><img src="images/1x/logo.png" alt=""></a>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-flip-menu" uk-toggle>
+                            <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+                        </a>
+                        <ul uk-scrollspy-nav="closest: li; scroll: true" class="uk-navbar-nav uk-visible@m">
+                            <li><a href="#home">TRANG CHỦ</a></li>
+                            <li><a href="#taisao">TẠI SAO CHỌN ĐH FPT?</a></li>
+                            <li><a href="#tuyensinh">THÔNG BÁO TUYỂN SINH</a></li>
+                            <li><a href="#daotao">CHUYÊN NGÀNH ĐÀO TẠO</a></li>
+                            <li><a href="#dangky">ĐĂNG KÝ HỌC</a></li>
+                            <li><a href="#">ĐĂNG NHẬP</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
     </div>
 </div>
@@ -180,7 +195,7 @@
                     </div>
                 </div>
             </div>
-            <div class="home__block02__item">
+            <div class="home__block02__item" id="taisao">
                 <div class="home__block02__item1">
                     <h2 class="home__block02__title uk-h2 uk-margin-remove uk-text-center">VÌ SAO 20.000 SINH VIÊN CHỌN ĐẠI HỌC FPT?</h2>
                     <div class="home__block02__desc uk-text-center uk-margin-small-top">Trường đại học FPT là môi trường tạo điều kiện thuận lợi nhất để sinh viên phát
@@ -397,6 +412,497 @@
                 </div>
                 <div class="home__block02__item1 uk-text-center">
                     <button class="home__block01__form__btn uk-button uk-button-secondary uk-border-pill"><span>ĐĂNG KÝ</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home__block03 uk-section-large" id="daotao">
+        <div class="uk-container">
+            <div class="uk-margin-medium uk-light">
+                <h2 class="home__block02__title uk-h2 uk-margin-remove uk-text-center">CHUYÊN NGÀNH ĐÀO TẠO</h2>
+            </div>
+            <div class="uk-margin-medium">
+                <div class="uk-flex-center" uk-grid>
+                    <div class="uk-width-2-5@m">
+                        <div class="uk-margin-small">
+                            <div class="home__block03__box1 home__block03__box1--c1">
+                                <span>NGÀNH QUẢN TRỊ KINH DOANH</span>
+                            </div>
+                            <div class="home__block03__box1 home__block03__box1--c2 uk-background-default">
+                                <span>Mã ngành: 7340101 / Chỉ tiêu: 2150</span>
+                            </div>
+                        </div>
+                        <div class="uk-margin-small-top">
+                            <div class="uk-grid-small" uk-grid>
+                                <div class="uk-width-auto">
+                                    <div data-src="images/1x/cn1.png" uk-img class="home__block03__cover uk-cover-container uk-border-rounded">
+                                        <canvas width="86" height="86"></canvas>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <ul class="uk-list home__block03__list">
+                                        <li class="uk-margin-remove">• Digital Marketing</li>
+                                        <li class="uk-margin-remove">• Kinh doanh quốc tế</li>
+                                        <li class="uk-margin-remove">• Quản trị khách sạn</li>
+                                        <li class="uk-margin-remove">• Quản trị dịch vụ du lịch & lữ hành</li>
+                                        <li class="uk-margin-remove">• Quản trị truyền thông đa phương tiện</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-2-5@m">
+                        <div class="uk-margin-small">
+                            <div class="home__block03__box1 home__block03__box1--c1">
+                                <span>NGÀNH CÔNG NGHỆ THÔNG TIN</span>
+                            </div>
+                            <div class="home__block03__box1 home__block03__box1--c2 uk-background-default">
+                                <span>Mã ngành: 7340101 / Chỉ tiêu: 2150</span>
+                            </div>
+                        </div>
+                        <div class="uk-margin-small-top">
+                            <div class="uk-grid-small" uk-grid>
+                                <div class="uk-width-auto">
+                                    <div data-src="images/1x/cn2.png" uk-img class="home__block03__cover uk-cover-container uk-border-rounded">
+                                        <canvas width="86" height="86"></canvas>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <ul class="uk-list home__block03__list">
+                                        <li class="uk-margin-remove">• AI - Trí tuệ nhân tạo</li>
+                                        <li class="uk-margin-remove">• IoT - Internet vạn vật</li>
+                                        <li class="uk-margin-remove">• An toàn thông tin</li>
+                                        <li class="uk-margin-remove">• Kỹ thuật phần mềm</li>
+                                        <li class="uk-margin-remove">• Hệ thống thông tin</li>
+                                        <li class="uk-margin-remove">• Thiết kế Mỹ thuật số</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-3@m">
+                        <div class="uk-grid-collapse uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <div data-src="images/1x/cn3.png" uk-img class="home__block03__cover uk-cover-container uk-border-rounded">
+                                    <canvas width="86" height="86"></canvas>
+                                </div>
+                            </div>
+                            <div class="uk-width-expand">
+                                <div class="home__block03__box1 home__block03__box1--c1">
+                                    <span>NGÀNH NGÔN NGỮ ANH</span>
+                                </div>
+                                <div class="home__block03__box1 home__block03__box1--c2 uk-background-default">
+                                    <span>Mã ngành: 7220201 / Chỉ tiêu: 650</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-3@m">
+                        <div class="uk-grid-collapse uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <div data-src="images/1x/cn4.png" uk-img class="home__block03__cover uk-cover-container uk-border-rounded">
+                                    <canvas width="86" height="86"></canvas>
+                                </div>
+                            </div>
+                            <div class="uk-width-expand">
+                                <div class="home__block03__box1 home__block03__box1--c1">
+                                    <span>NGÔN NGỮ NHẬT</span>
+                                </div>
+                                <div class="home__block03__box1 home__block03__box1--c2 uk-background-default">
+                                    <span>Mã ngành: 7220201 / Chỉ tiêu: 650</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-3@m">
+                        <div class="uk-grid-collapse uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <div data-src="images/1x/cn5.png" uk-img class="home__block03__cover uk-cover-container uk-border-rounded">
+                                    <canvas width="86" height="86"></canvas>
+                                </div>
+                            </div>
+                            <div class="uk-width-expand">
+                                <div class="home__block03__box1 home__block03__box1--c1">
+                                    <span>NGÔN NGỮ HÀN QUỐC</span>
+                                </div>
+                                <div class="home__block03__box1 home__block03__box1--c2 uk-background-default">
+                                    <span>Mã ngành: 7220201 / Chỉ tiêu: 650</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home__block04 uk-section" id="tuyensinh">
+        <div class="uk-container">
+            <div class="uk-margin-medium">
+                <h2 class="home__block02__title uk-h2 uk-margin-remove uk-text-center">Thông báo tuyển sinh <br>
+                    hệ đại học chính quy Đại học FPT năm 2021</h2>
+            </div>
+            <div class="uk-margin-medium-top">
+                <ul class="home__block04__tab uk-child-width-expand uk-margin-remove-bottom uk-flex-bottom" uk-tab="connect: .switcher-container">
+                    <li class="home__block04__tab__li uk-active"><a class="home__block04__tab__a" href="#">PHƯƠNG THỨC TUYỂN SINH</a></li>
+                    <li class="home__block04__tab__li"><a class="home__block04__tab__a" href="#">THỦ TỤC XÉT TUYỂN</a></li>
+                    <li class="home__block04__tab__li"><a class="home__block04__tab__a" href="#">ĐĂNG KÝ & NỘP PHÍ</a></li>
+                </ul>
+                <div class="home__block04__card uk-card uk-card-body uk-background-muted">
+                    <ul class="uk-switcher switcher-container">
+                        <li>
+                            <div class="uk-margin">
+                                <div class="uk-text-center home__block04__txt">
+                                    Đối tượng tuyển sinh Các thí sinh tốt nghiệp THPT hoặc tương đương tính đến thời điểm nhập học
+                                    <br class="uk-visible@m">
+                                    Điều kiện xét tuyển Đáp ứng một trong các điều kiện sau
+                                </div>
+                            </div>
+                            <div class="uk-margin-top">
+                                <div class="uk-child-width-1-2@m uk-grid-small uk-grid-30-m" uk-grid>
+                                    <div>
+                                        <div class="uk-child-width-1-1 uk-grid-small uk-grid-30-m" uk-grid>
+                                            <div>
+                                                <div data-count="1" class="home__block04__box1 uk-padding-small uk-background-default">
+                                                    <div class="home__block04__box1__txt">Thuộc diện được tuyển thẳng theo Quy chế tuyển sinh Đại học, Cao đẳng hệ đại học chính quy của Bộ GD&ĐT.</div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div data-count="2" class="home__block04__box1 uk-padding-small uk-background-default">
+                                                    <div class="home__block04__box1__txt">Điểm học bạ thuộc Top50 THPT toàn quốc<br>(chứng nhận thực hiện trên trang http://SchoolRank.fpt.edu.vn)</div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div data-count="3" class="home__block04__box1 uk-padding-small uk-background-default">
+                                                    <div class="home__block04__box1__txt">Điểm các môn thi trong kỳ thi THPT 2020 thuộc Top50 THPT toàn quốc (theo số liệu Đại học FPT tổng hợp và công bố sau kỳ thi THPT 2020) và điểm theo khối xét tuyển đạt từ trung bình trở lên (15/30 điểm).</div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div data-count="4" class="home__block04__box1 uk-padding-small uk-background-default">
+                                                    <div class="home__block04__box1__txt">Ngành Ngôn Ngữ Anh: Có chứng chỉ tiếng Anh TOEFL iBT từ 80 hoặc IELTS (Học thuật) từ 6.0 hoặc quy đổi tương đương.</div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div data-count="5" class="home__block04__box1 uk-padding-small uk-background-default">
+                                                    <div class="home__block04__box1__txt">Ngành Ngôn Ngữ Nhật: Có chứng chỉ tiếng Nhật JLPT từ N3 trở lên.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-child-width-1-1 uk-grid-small uk-grid-30-m" uk-grid>
+                                            <div>
+                                                <div data-count="6" class="home__block04__box1 uk-padding-small uk-background-default">
+                                                    <div class="home__block04__box1__txt">Tốt nghiệp Chương trình APTECH HDSE. <br> (áp dụng đối với ngành CNTT)</div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div data-count="7" class="home__block04__box1 uk-padding-small uk-background-default">
+                                                    <div class="home__block04__box1__txt">
+                                                        Ngành Ngôn Ngữ Hàn:<br>
+                                                        Chứng chỉ Topik cấp độ 4 trong kỳ thi TOPIK II
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div data-count="8" class="home__block04__box1 uk-padding-small uk-background-default">
+                                                    <div class="home__block04__box1__txt">
+                                                        Tốt nghiệp Chương trình ARENA ADIM.<br>
+                                                        (áp dụng đối với chuyên ngành Thiết kế Mỹ thuật số)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div data-count="9" class="home__block04__box1 uk-padding-small uk-background-default">
+                                                    <div class="home__block04__box1__txt">Đã tốt nghiệp Đại học.</div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div data-count="10" class="home__block04__box1 uk-padding-small uk-background-default">
+                                                    <div class="home__block04__box1__txt">Thí sinh tốt nghiệp THPT ở nước ngoài</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>Hello again!</li>
+                        <li>Bazinga!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home__block05 uk-section">
+        <div class="uk-container">
+            <div class="uk-margin-medium uk-light">
+                <h2 class="home__block02__title uk-h2 uk-margin-remove uk-text-center">SINH VIÊN, PHỤ HUYNH, NHÀ TUYỂN DỤNG NÓI GÌ?</h2>
+            </div>
+            <div class="uk-margin-medium-top">
+                <div class="" uk-slider>
+
+                    <div class="uk-position-relative">
+
+                        <div class="uk-slider-container uk-slider-container-offset">
+                            <ul class="uk-slider-items uk-child-width-1-1" uk-grid>
+                                <li>
+                                    <div class="home__block05__card uk-card uk-card-default uk-card-body">
+                                        <div class="uk-grid-small uk-grid-20-s uk-flex-middle" uk-grid>
+                                            <div class="uk-width-auto@s uk-text-center">
+                                                <div class="uk-cover-container uk-border-circle uk-display-inline-block">
+                                                    <img src="images/lemanhhai_anhthe.jpg" alt="" uk-cover="">
+                                                    <canvas width="167" height="167"></canvas>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <div class="uk-margin">
+                                                    <div class="home__block05__txt1">“Con gái cô đã được 1 công ty hàng không của Nhật Bản mời về làm việc 2 tháng nay khi em còn chưa tốt nghiệp. Cô chắn chắn rằng 4 năm qua nhà trường đã trang bị cho các con mọi thứ rất chu đáo thì các con hiện nay mới vững vàng được như thế. Ngày hôm nay tham dự buổi lễ tốt nghiệp của con, cô thực sự rất cảm động và thấy rất ấm áp. So với 4 năm trước khi cô dự lễ khai giảng thì thấy các con trưởng thành, chững chạc hơn nhiều. Cô cảm nhận được sự trách nhiệm của thầy cô từ ngày đầu tiên cho tới những ngày cuối cùng này.”</div>
+                                                </div>
+                                                <div class="uk-margin-top">
+                                                    <div class="home__block05__txt2">
+                                                        Cô Lê Nga - Phụ huynh sinh viên Trần Lê Lâm Anh <br>
+                                                        K11 ngành Quản trị kinh doanh
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="home__block05__card uk-card uk-card-default uk-card-body">
+                                        <div class="uk-grid-small uk-grid-20-s uk-flex-middle" uk-grid>
+                                            <div class="uk-width-auto@s uk-text-center">
+                                                <div class="uk-cover-container uk-border-circle uk-display-inline-block">
+                                                    <img src="images/lemanhhai_anhthe.jpg" alt="" uk-cover="">
+                                                    <canvas width="167" height="167"></canvas>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <div class="uk-margin">
+                                                    <div class="home__block05__txt1">“Con gái cô đã được 1 công ty hàng không của Nhật Bản mời về làm việc 2 tháng nay khi em còn chưa tốt nghiệp. Cô chắn chắn rằng 4 năm qua nhà trường đã trang bị cho các con mọi thứ rất chu đáo thì các con hiện nay mới vững vàng được như thế. Ngày hôm nay tham dự buổi lễ tốt nghiệp của con, cô thực sự rất cảm động và thấy rất ấm áp. So với 4 năm trước khi cô dự lễ khai giảng thì thấy các con trưởng thành, chững chạc hơn nhiều. Cô cảm nhận được sự trách nhiệm của thầy cô từ ngày đầu tiên cho tới những ngày cuối cùng này.”</div>
+                                                </div>
+                                                <div class="uk-margin-top">
+                                                    <div class="home__block05__txt2">
+                                                        Cô Lê Nga - Phụ huynh sinh viên Trần Lê Lâm Anh <br>
+                                                        K11 ngành Quản trị kinh doanh
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="home__block05__card uk-card uk-card-default uk-card-body">
+                                        <div class="uk-grid-small uk-grid-20-s uk-flex-middle" uk-grid>
+                                            <div class="uk-width-auto@s uk-text-center">
+                                                <div class="uk-cover-container uk-border-circle uk-display-inline-block">
+                                                    <img src="images/lemanhhai_anhthe.jpg" alt="" uk-cover="">
+                                                    <canvas width="167" height="167"></canvas>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <div class="uk-margin">
+                                                    <div class="home__block05__txt1">“Con gái cô đã được 1 công ty hàng không của Nhật Bản mời về làm việc 2 tháng nay khi em còn chưa tốt nghiệp. Cô chắn chắn rằng 4 năm qua nhà trường đã trang bị cho các con mọi thứ rất chu đáo thì các con hiện nay mới vững vàng được như thế. Ngày hôm nay tham dự buổi lễ tốt nghiệp của con, cô thực sự rất cảm động và thấy rất ấm áp. So với 4 năm trước khi cô dự lễ khai giảng thì thấy các con trưởng thành, chững chạc hơn nhiều. Cô cảm nhận được sự trách nhiệm của thầy cô từ ngày đầu tiên cho tới những ngày cuối cùng này.”</div>
+                                                </div>
+                                                <div class="uk-margin-top">
+                                                    <div class="home__block05__txt2">
+                                                        Cô Lê Nga - Phụ huynh sinh viên Trần Lê Lâm Anh <br>
+                                                        K11 ngành Quản trị kinh doanh
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="uk-hidden@s uk-light">
+                            <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                            <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                        </div>
+
+                        <div class="uk-visible@s uk-light">
+                            <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                            <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                        </div>
+
+                    </div>
+
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home__block06 uk-section" id="dangky">
+        <div class="uk-container">
+            <div class="uk-margin uk-light">
+                <h2 class="home__block02__title uk-h2 uk-margin-remove uk-text-center">Thời hạn xét tuyển 25/03/2022</h2>
+            </div>
+            <div class="uk-margin">
+                <div class="uk-flex-center" uk-grid>
+                    <div class="uk-width-3-5@m">
+                        <div class="home__block06__card uk-card uk-card-default uk-card-body">
+                            <div class="uk-grid-small uk-child-width-auto uk-flex-center" uk-grid uk-countdown="date: 2022-03-25T00:00:00+07:00">
+                                <div>
+                                    <div class="home__block06__card__number uk-countdown-number uk-countdown-days"></div>
+                                    <div class="home__block06__card__label uk-countdown-label uk-margin-small uk-text-center uk-visible@s">NGÀY</div>
+                                </div>
+                                <div class="home__block06__card__separator uk-countdown-separator">:</div>
+                                <div>
+                                    <div class="home__block06__card__number uk-countdown-number uk-countdown-hours"></div>
+                                    <div class="home__block06__card__label uk-countdown-label uk-margin-small uk-text-center uk-visible@s">GIỜ</div>
+                                </div>
+                                <div class="home__block06__card__separator uk-countdown-separator">:</div>
+                                <div>
+                                    <div class="home__block06__card__number uk-countdown-number uk-countdown-minutes"></div>
+                                    <div class="home__block06__card__label uk-countdown-label uk-margin-small uk-text-center uk-visible@s">PHÚT</div>
+                                </div>
+                                <div class="home__block06__card__separator uk-countdown-separator">:</div>
+                                <div>
+                                    <div class="home__block06__card__number uk-countdown-number uk-countdown-seconds"></div>
+                                    <div class="home__block06__card__label uk-countdown-label uk-margin-small uk-text-center uk-visible@s">GIÂY</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-margin">
+                <div class="uk-grid-small" uk-grid>
+                    <div class="uk-width-1-3@s">
+                        <input class="uk-input home__block06__input" type="text" placeholder="Họ và tên*">
+                    </div>
+                    <div class="uk-width-1-3@s">
+                        <input class="uk-input home__block06__input" type="text" placeholder="Số điện thoại*">
+                    </div>
+                    <div class="uk-width-1-3@s">
+                        <input class="uk-input home__block06__input" type="text" placeholder="Trường THPT / Đại Học ">
+                    </div>
+                    <div class="uk-width-1-3@s">
+                        <input class="uk-input home__block06__input" type="text" placeholder="Ngày sinh">
+                    </div>
+                    <div class="uk-width-1-3@s">
+                        <input class="uk-input home__block06__input" type="text" placeholder="Email">
+                    </div>
+                    <div class="uk-width-1-3@s">
+                        <input class="uk-input home__block06__input" type="text" placeholder="Tỉnh / Thành phố">
+                    </div>
+                    <div class="uk-width-1-1">
+                        <input class="uk-input home__block06__input" type="text" placeholder="Link Facebook của bạn">
+                    </div>
+                </div>
+            </div>
+            <div class="uk-margin">
+                <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                    <div class="uk-width-1-5@m"><span class="home__block06__label">Đăng ký*</span></div>
+                    <label><input class="uk-radio" type="radio" name="radio1"> <span class="home__block06__label">Tư vấn</span></label>
+                    <label><input class="uk-radio" type="radio" name="radio1"> <span class="home__block06__label">Xét tuyển</span></label>
+                    <label><input class="uk-radio" type="radio" name="radio1"> <span class="home__block06__label">Thi học bổng</span></label>
+                    <label><input class="uk-radio" type="radio" name="radio1"> <span class="home__block06__label">Xét học bổng</span></label>
+                </div>
+                <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                    <div class="uk-width-1-5@m"><span class="home__block06__label">Nơi đăng ký sơ tuyển:</span></div>
+                    <label><input class="uk-radio" type="radio" name="radio2"> <span class="home__block06__label">Hà Nội</span></label>
+                    <label><input class="uk-radio" type="radio" name="radio2"> <span class="home__block06__label">Tp.HCM</span></label>
+                    <label><input class="uk-radio" type="radio" name="radio2"> <span class="home__block06__label">Cần Thơ</span></label>
+                    <label><input class="uk-radio" type="radio" name="radio2"> <span class="home__block06__label">Đà Nẵng</span></label>
+                </div>
+            </div>
+            <div class="uk-margin-top uk-text-center">
+                <button class="home__block01__form__btn uk-button uk-button-secondary uk-border-pill"><span>ĐĂNG KÝ</span></button>
+            </div>
+        </div>
+    </div>
+    <div class="home__block07 uk-section">
+        <div class="uk-container">
+            <div class="uk-grid-small uk-grid-20-m uk-grid-match" uk-grid>
+                <div class="uk-width-2-5@m">
+                    <div class="uk-cover-container">
+                        <img src="images/banner-emagazine-2-(1).jpeg" alt="" uk-cover="">
+                        <canvas width="455" height="303"></canvas>
+                    </div>
+                </div>
+                <div class="uk-width-2-5@m">
+                    <div class="uk-grid-small uk-grid-20-m uk-grid-match" uk-grid>
+                        <div class="uk-width-1-2">
+                            <div class="uk-grid-small uk-grid-20-m uk-grid-match" uk-grid>
+                                <div class="uk-width-1-1">
+                                    <div class="uk-cover-container">
+                                        <img src="images/DJI_0290.jpg" alt="" uk-cover="">
+                                        <canvas width="219" height="146"></canvas>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-1">
+                                    <div class="uk-cover-container">
+                                        <img src="images/IMG_3489.jpg" alt="" uk-cover="">
+                                        <canvas width="219" height="146"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-2">
+                            <div class="uk-cover-container">
+                                <img src="images/1x/luk2.jpg" alt="" uk-cover="">
+                                <canvas width="202" height="304"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-5@m">
+                    <div class="uk-grid-small uk-grid-20-m uk-grid-match" uk-grid>
+                        <div class="uk-width-1-1@m uk-width-1-2">
+                            <div class="uk-cover-container">
+                                <img src="images/IMG_2400.jpg" alt="" uk-cover="">
+                                <canvas width="219" height="146"></canvas>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-1@m uk-width-1-2">
+                            <div class="uk-cover-container">
+                                <img src="images/IMG_2241.jpg" alt="" uk-cover="">
+                                <canvas width="219" height="146"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer uk-section-xsmall">
+        <div class="uk-container uk-container-small">
+            <div class="uk-flex-middle uk-child-width-auto uk-flex-between uk-grid-5" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div; delay: 300; repeat: false">
+                <div>
+                    <div class="uk-flex-middle uk-grid-5 uk-grid-10-m" uk-grid>
+                        <div class="uk-width-auto">
+                            <a href="" class="uk-icon-button footer__icon" uk-icon="icon: mail; ratio: 0.9"></a>
+                        </div>
+                        <div class="uk-width-expand">
+                            <span class="footer__txt">daihocfpt@fpt.edu.vn</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="" class="uk-button footer__btn uk-button-default uk-button-large uk-border-pill">
+                        <div class="uk-flex-middle uk-grid-5 uk-grid-10-m" uk-grid>
+                            <div class="uk-width-auto">
+                                <span class="uk-icon-button footer__icon" uk-icon="icon: receiver; ratio: 0.9"></span>
+                            </div>
+                            <div class="uk-width-expand">
+                                <span class="footer__txt">024/028 73001866</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <div class="uk-flex-middle uk-grid-5 uk-grid-10-m" uk-grid>
+                        <div class="uk-width-auto">
+                            <a href="" class="uk-icon-button footer__icon" uk-icon="icon: facebook; ratio: 0.9"></a>
+                        </div>
+                        <div class="uk-width-expand">
+                            <span class="footer__txt">FPT University</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
