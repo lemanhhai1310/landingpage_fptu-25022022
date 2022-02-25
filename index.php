@@ -475,4 +475,102 @@
         </div>
     </div>
 </div>
+<div class="home__block04 uk-section">
+    <div class="uk-container">
+        <div class="uk-margin-medium">
+            <h2 class="home__block02__title uk-h2 uk-margin-remove uk-text-center">Thông báo tuyển sinh <br>
+                hệ đại học chính quy Đại học FPT năm 2021</h2>
+        </div>
+        <div class="uk-margin-medium-top">
+            <ul class="home__block04__tab uk-child-width-expand uk-margin-remove-bottom uk-flex-bottom" uk-tab="connect: .switcher-container">
+                <li class="home__block04__tab__li uk-active"><a class="home__block04__tab__a" href="#">PHƯƠNG THỨC TUYỂN SINH</a></li>
+                <li class="home__block04__tab__li"><a class="home__block04__tab__a" href="#">THỦ TỤC XÉT TUYỂN</a></li>
+                <li class="home__block04__tab__li"><a class="home__block04__tab__a" href="#">ĐĂNG KÝ & NỘP PHÍ</a></li>
+            </ul>
+            <div class="home__block04__card uk-card uk-card-body uk-background-muted">
+                <ul class="uk-switcher switcher-container">
+                    <li>
+                        <div class="uk-margin">
+                            <div class="uk-text-center home__block04__txt">
+                                Đối tượng tuyển sinh Các thí sinh tốt nghiệp THPT hoặc tương đương tính đến thời điểm nhập học
+                                <br class="uk-visible@m">
+                                Điều kiện xét tuyển Đáp ứng một trong các điều kiện sau
+                            </div>
+                        </div>
+                        <div class="uk-margin-top">
+                            <div class="uk-child-width-1-2@m uk-grid-small uk-grid-30-m" uk-grid>
+                                <div>
+                                    <div class="uk-child-width-1-1 uk-grid-small uk-grid-30-m" uk-grid>
+                                        <div>
+                                            <div data-count="1" class="home__block04__box1 uk-padding-small uk-background-default">
+                                                <div class="home__block04__box1__txt">Thuộc diện được tuyển thẳng theo Quy chế tuyển sinh Đại học, Cao đẳng hệ đại học chính quy của Bộ GD&ĐT.</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-count="2" class="home__block04__box1 uk-padding-small uk-background-default">
+                                                <div class="home__block04__box1__txt">Điểm học bạ thuộc Top50 THPT toàn quốc<br>(chứng nhận thực hiện trên trang http://SchoolRank.fpt.edu.vn)</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-count="3" class="home__block04__box1 uk-padding-small uk-background-default">
+                                                <div class="home__block04__box1__txt">Điểm các môn thi trong kỳ thi THPT 2020 thuộc Top50 THPT toàn quốc (theo số liệu Đại học FPT tổng hợp và công bố sau kỳ thi THPT 2020) và điểm theo khối xét tuyển đạt từ trung bình trở lên (15/30 điểm).</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-count="4" class="home__block04__box1 uk-padding-small uk-background-default">
+                                                <div class="home__block04__box1__txt">Ngành Ngôn Ngữ Anh: Có chứng chỉ tiếng Anh TOEFL iBT từ 80 hoặc IELTS (Học thuật) từ 6.0 hoặc quy đổi tương đương.</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-count="5" class="home__block04__box1 uk-padding-small uk-background-default">
+                                                <div class="home__block04__box1__txt">Ngành Ngôn Ngữ Nhật: Có chứng chỉ tiếng Nhật JLPT từ N3 trở lên.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-child-width-1-1 uk-grid-small uk-grid-30-m" uk-grid>
+                                        <div>
+                                            <div data-count="6" class="home__block04__box1 uk-padding-small uk-background-default">
+                                                <div class="home__block04__box1__txt">Tốt nghiệp Chương trình APTECH HDSE. <br> (áp dụng đối với ngành CNTT)</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-count="7" class="home__block04__box1 uk-padding-small uk-background-default">
+                                                <div class="home__block04__box1__txt">
+                                                    Ngành Ngôn Ngữ Hàn:<br>
+                                                    Chứng chỉ Topik cấp độ 4 trong kỳ thi TOPIK II
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-count="8" class="home__block04__box1 uk-padding-small uk-background-default">
+                                                <div class="home__block04__box1__txt">
+                                                    Tốt nghiệp Chương trình ARENA ADIM.<br>
+                                                    (áp dụng đối với chuyên ngành Thiết kế Mỹ thuật số)
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-count="9" class="home__block04__box1 uk-padding-small uk-background-default">
+                                                <div class="home__block04__box1__txt">Đã tốt nghiệp Đại học.</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-count="10" class="home__block04__box1 uk-padding-small uk-background-default">
+                                                <div class="home__block04__box1__txt">Thí sinh tốt nghiệp THPT ở nước ngoài</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>Hello again!</li>
+                    <li>Bazinga!</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 <?php require "template-parts/layouts/footer.php"; ?>
