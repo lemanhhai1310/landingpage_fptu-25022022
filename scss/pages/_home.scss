@@ -1,8 +1,15 @@
 .home{
   &__header{
+    .uk-sticky-fixed> &{
+      background-color: #fff;
+      box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+    }
     .uk-navbar-nav{
       >li{
         >a{
+          .uk-sticky-fixed &{
+            color: #1D1D1B;
+          }
           color: #ffffff;
           @extend .fz-14;
           font-family: $font-BeVietnamPro-Regular;
@@ -30,6 +37,9 @@
     .uk-navbar-toggle{
       color: #ffffff;
       font-family: $font-BeVietnamPro-Regular;
+      .uk-sticky-fixed &{
+        color: #1D1D1B;
+      }
     }
   }
   &__block07{

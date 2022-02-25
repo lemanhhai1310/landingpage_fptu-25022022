@@ -22,3 +22,15 @@
 <?php require "template-parts/commons/facebook_chat.php"; ?>
 <!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+    <div id="offcanvas-flip-menu" class="menuMobile" uk-offcanvas="flip: false; overlay: true">
+        <div class="uk-offcanvas-bar menuMobile__bar">
+            <ul uk-scrollspy-nav="closest: li; scroll: true" class="menuMobile__nav uk-nav-default uk-nav-parent-icon uk-nav-divider" uk-nav="multiple: false;toggle: .menuMobile__nav__icon;collapsible:false;">
+                <li><a href="#">TRANG CHỦ</a></li>
+                <li><a href="#taisao">TẠI SAO CHỌN ĐH FPT?</a></li>
+                <li><a href="#tuyensinh">THÔNG BÁO TUYỂN SINH</a></li>
+                <li><a href="#daotao">CHUYÊN NGÀNH ĐÀO TẠO</a></li>
+                <li><a href="#dangky">ĐĂNG KÝ HỌC</a></li>
+                <li><a href="#">ĐĂNG NHẬP</a></li>
+            </ul>
+        </div>
+    </div>

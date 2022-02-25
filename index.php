@@ -50,29 +50,31 @@
             </div>
         </div>
     </div>
-    <div class="uk-position-top home__header">
-        <div class="uk-container">
-            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-                <div class="uk-navbar-left uk-visible@m">
-                    <a href="" class="uk-navbar-item uk-logo uk-background-default"><img src="images/1x/logo.png" alt=""></a>
-                </div>
-                <div class="uk-navbar-center uk-hidden@m">
-                    <a href="" class="uk-navbar-item uk-logo uk-background-default"><img src="images/1x/logo.png" alt=""></a>
-                </div>
-                <div class="uk-navbar-right">
-                    <a class="uk-navbar-toggle uk-hidden@m" href="#">
-                        <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
-                    </a>
-                    <ul class="uk-navbar-nav uk-visible@m">
-                        <li><a href="#">TRANG CHỦ</a></li>
-                        <li><a href="#">TẠI SAO CHỌN ĐH FPT?</a></li>
-                        <li><a href="#">THÔNG BÁO TUYỂN SINH</a></li>
-                        <li><a href="#">CHUYÊN NGÀNH ĐÀO TẠO</a></li>
-                        <li><a href="#">ĐĂNG KÝ HỌC</a></li>
-                        <li><a href="#">ĐĂNG NHẬP</a></li>
-                    </ul>
-                </div>
-            </nav>
+    <div uk-sticky>
+        <div class="uk-position-fixed uk-position-top home__header">
+            <div class="uk-container">
+                <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                    <div class="uk-navbar-left uk-visible@m">
+                        <a href="." class="uk-navbar-item uk-logo uk-background-default"><img src="images/1x/logo.png" alt=""></a>
+                    </div>
+                    <div class="uk-navbar-center uk-hidden@m">
+                        <a href="." class="uk-navbar-item uk-logo uk-background-default"><img src="images/1x/logo.png" alt=""></a>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-flip-menu" uk-toggle>
+                            <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+                        </a>
+                        <ul uk-scrollspy-nav="closest: li; scroll: true" class="uk-navbar-nav uk-visible@m">
+                            <li><a href="#">TRANG CHỦ</a></li>
+                            <li><a href="#taisao">TẠI SAO CHỌN ĐH FPT?</a></li>
+                            <li><a href="#tuyensinh">THÔNG BÁO TUYỂN SINH</a></li>
+                            <li><a href="#daotao">CHUYÊN NGÀNH ĐÀO TẠO</a></li>
+                            <li><a href="#dangky">ĐĂNG KÝ HỌC</a></li>
+                            <li><a href="#">ĐĂNG NHẬP</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
     </div>
 </div>
@@ -135,7 +137,7 @@
                 </div>
             </div>
         </div>
-        <div class="home__block02__item">
+        <div class="home__block02__item" id="taisao">
             <div class="home__block02__item1">
                 <h2 class="home__block02__title uk-h2 uk-margin-remove uk-text-center">VÌ SAO 20.000 SINH VIÊN CHỌN ĐẠI HỌC FPT?</h2>
                 <div class="home__block02__desc uk-text-center uk-margin-small-top">Trường đại học FPT là môi trường tạo điều kiện thuận lợi nhất để sinh viên phát
@@ -356,7 +358,7 @@
         </div>
     </div>
 </div>
-<div class="home__block03 uk-section-large">
+<div class="home__block03 uk-section-large" id="daotao">
     <div class="uk-container">
         <div class="uk-margin-medium uk-light">
             <h2 class="home__block02__title uk-h2 uk-margin-remove uk-text-center">CHUYÊN NGÀNH ĐÀO TẠO</h2>
@@ -475,7 +477,7 @@
         </div>
     </div>
 </div>
-<div class="home__block04 uk-section">
+<div class="home__block04 uk-section" id="tuyensinh">
     <div class="uk-container">
         <div class="uk-margin-medium">
             <h2 class="home__block02__title uk-h2 uk-margin-remove uk-text-center">Thông báo tuyển sinh <br>
@@ -631,7 +633,7 @@
         </div>
     </div>
 </div>
-<div class="home__block06 uk-section">
+<div class="home__block06 uk-section" id="dangky">
     <div class="uk-container">
         <div class="uk-margin uk-light">
             <h2 class="home__block02__title uk-h2 uk-margin-remove uk-text-center">Thời hạn xét tuyển 25/03/2022</h2>
@@ -640,7 +642,7 @@
             <div class="uk-flex-center" uk-grid>
                 <div class="uk-width-3-5@m">
                     <div class="home__block06__card uk-card uk-card-default uk-card-body">
-                        <div class="uk-grid-small uk-child-width-auto uk-flex-center" uk-grid uk-countdown="date: 2022-03-04T19:07:29+00:00">
+                        <div class="uk-grid-small uk-child-width-auto uk-flex-center" uk-grid uk-countdown="date: 2022-03-25T00:00:00+07:00">
                             <div>
                                 <div class="home__block06__card__number uk-countdown-number uk-countdown-days"></div>
                                 <div class="home__block06__card__label uk-countdown-label uk-margin-small uk-text-center uk-visible@s">NGÀY</div>
@@ -715,32 +717,50 @@
     <div class="uk-container">
         <div class="uk-grid-small uk-grid-20-m uk-grid-match" uk-grid>
             <div class="uk-width-2-5@m">
-                <img src="images/banner-emagazine-2-(1).jpeg" alt="">
+                <div class="uk-cover-container">
+                    <img src="images/banner-emagazine-2-(1).jpeg" alt="" uk-cover="">
+                    <canvas width="455" height="303"></canvas>
+                </div>
             </div>
             <div class="uk-width-2-5@m">
                 <div class="uk-grid-small uk-grid-20-m uk-grid-match" uk-grid>
                     <div class="uk-width-1-2">
                         <div class="uk-grid-small uk-grid-20-m uk-grid-match" uk-grid>
                             <div class="uk-width-1-1">
-                                <img src="images/DJI_0290.jpg" alt="">
+                                <div class="uk-cover-container">
+                                    <img src="images/DJI_0290.jpg" alt="" uk-cover="">
+                                    <canvas width="219" height="146"></canvas>
+                                </div>
                             </div>
                             <div class="uk-width-1-1">
-                                <img src="images/IMG_3489.jpg" alt="">
+                                <div class="uk-cover-container">
+                                    <img src="images/IMG_3489.jpg" alt="" uk-cover="">
+                                    <canvas width="219" height="146"></canvas>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="uk-width-1-2">
-                        <img src="images/1x/luk2.jpg" alt="">
+                        <div class="uk-cover-container">
+                            <img src="images/1x/luk2.jpg" alt="" uk-cover="">
+                            <canvas width="202" height="304"></canvas>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="uk-width-1-5@m">
                 <div class="uk-grid-small uk-grid-20-m uk-grid-match" uk-grid>
                     <div class="uk-width-1-1@m uk-width-1-2">
-                        <img src="images/IMG_2400.jpg" alt="">
+                        <div class="uk-cover-container">
+                            <img src="images/IMG_2400.jpg" alt="" uk-cover="">
+                            <canvas width="219" height="146"></canvas>
+                        </div>
                     </div>
                     <div class="uk-width-1-1@m uk-width-1-2">
-                        <img src="images/IMG_2241.jpg" alt="">
+                        <div class="uk-cover-container">
+                            <img src="images/IMG_2241.jpg" alt="" uk-cover="">
+                            <canvas width="219" height="146"></canvas>
+                        </div>
                     </div>
                 </div>
             </div>
