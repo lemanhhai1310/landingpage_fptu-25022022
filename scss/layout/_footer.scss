@@ -1,0 +1,32 @@
+.footer{
+  background-color: #B1360E;
+  &__txt{
+    @extend .fz-16;
+    color: #ffffff;
+    font-family: $font-Roboto-BoldItalic;
+    line-height: (17/16);
+    .footer__btn &{
+      color: #ffffff;
+      font-family: $font-Roboto-Black;
+      line-height: (13/16);
+    }
+  }
+  &__icon{
+    $x: 27px;
+    width: #{$x};
+    height: #{$x};
+    color: #fff;
+    background: #E77126;
+    .footer__btn &{
+      color: #E77126;
+      background: #ffffff;
+    }
+  }
+  &__btn{
+    text-transform: inherit;
+    background-color: #E77126 !important;
+    border-color: #E77126 !important;
+    line-height: 47px;
+    padding: 0 16px;
+  }
+}

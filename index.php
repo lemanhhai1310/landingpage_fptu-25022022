@@ -573,4 +573,217 @@
         </div>
     </div>
 </div>
+<div class="home__block05 uk-section">
+    <div class="uk-container">
+        <div class="uk-margin-medium uk-light">
+            <h2 class="home__block02__title uk-h2 uk-margin-remove uk-text-center">SINH VIÊN, PHỤ HUYNH, NHÀ TUYỂN DỤNG NÓI GÌ?</h2>
+        </div>
+        <div class="uk-margin-medium-top">
+            <div class="" uk-slider>
+
+                <div class="uk-position-relative">
+
+                    <div class="uk-slider-container uk-slider-container-offset">
+                        <ul class="uk-slider-items uk-child-width-1-1" uk-grid>
+                            <?php for ($i=0;$i<=2;$i++): ?>
+                            <li>
+                                <div class="home__block05__card uk-card uk-card-default uk-card-body">
+                                    <div class="uk-grid-small uk-grid-20-s uk-flex-middle" uk-grid>
+                                        <div class="uk-width-auto@s uk-text-center">
+                                            <div class="uk-cover-container uk-border-circle uk-display-inline-block">
+                                                <img src="images/lemanhhai_anhthe.jpg" alt="" uk-cover="">
+                                                <canvas width="167" height="167"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <div class="uk-margin">
+                                                <div class="home__block05__txt1">“Con gái cô đã được 1 công ty hàng không của Nhật Bản mời về làm việc 2 tháng nay khi em còn chưa tốt nghiệp. Cô chắn chắn rằng 4 năm qua nhà trường đã trang bị cho các con mọi thứ rất chu đáo thì các con hiện nay mới vững vàng được như thế. Ngày hôm nay tham dự buổi lễ tốt nghiệp của con, cô thực sự rất cảm động và thấy rất ấm áp. So với 4 năm trước khi cô dự lễ khai giảng thì thấy các con trưởng thành, chững chạc hơn nhiều. Cô cảm nhận được sự trách nhiệm của thầy cô từ ngày đầu tiên cho tới những ngày cuối cùng này.”</div>
+                                            </div>
+                                            <div class="uk-margin-top">
+                                                <div class="home__block05__txt2">
+                                                    Cô Lê Nga - Phụ huynh sinh viên Trần Lê Lâm Anh <br>
+                                                    K11 ngành Quản trị kinh doanh
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <?php endfor; ?>
+                        </ul>
+                    </div>
+
+                    <div class="uk-hidden@s uk-light">
+                        <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    </div>
+
+                    <div class="uk-visible@s uk-light">
+                        <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    </div>
+
+                </div>
+
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="home__block06 uk-section">
+    <div class="uk-container">
+        <div class="uk-margin uk-light">
+            <h2 class="home__block02__title uk-h2 uk-margin-remove uk-text-center">Thời hạn xét tuyển 25/03/2022</h2>
+        </div>
+        <div class="uk-margin">
+            <div class="uk-flex-center" uk-grid>
+                <div class="uk-width-3-5@m">
+                    <div class="home__block06__card uk-card uk-card-default uk-card-body">
+                        <div class="uk-grid-small uk-child-width-auto uk-flex-center" uk-grid uk-countdown="date: 2022-03-04T19:07:29+00:00">
+                            <div>
+                                <div class="home__block06__card__number uk-countdown-number uk-countdown-days"></div>
+                                <div class="home__block06__card__label uk-countdown-label uk-margin-small uk-text-center uk-visible@s">NGÀY</div>
+                            </div>
+                            <div class="home__block06__card__separator uk-countdown-separator">:</div>
+                            <div>
+                                <div class="home__block06__card__number uk-countdown-number uk-countdown-hours"></div>
+                                <div class="home__block06__card__label uk-countdown-label uk-margin-small uk-text-center uk-visible@s">GIỜ</div>
+                            </div>
+                            <div class="home__block06__card__separator uk-countdown-separator">:</div>
+                            <div>
+                                <div class="home__block06__card__number uk-countdown-number uk-countdown-minutes"></div>
+                                <div class="home__block06__card__label uk-countdown-label uk-margin-small uk-text-center uk-visible@s">PHÚT</div>
+                            </div>
+                            <div class="home__block06__card__separator uk-countdown-separator">:</div>
+                            <div>
+                                <div class="home__block06__card__number uk-countdown-number uk-countdown-seconds"></div>
+                                <div class="home__block06__card__label uk-countdown-label uk-margin-small uk-text-center uk-visible@s">GIÂY</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-margin">
+            <div class="uk-grid-small" uk-grid>
+                <div class="uk-width-1-3@s">
+                    <input class="uk-input home__block06__input" type="text" placeholder="Họ và tên*">
+                </div>
+                <div class="uk-width-1-3@s">
+                    <input class="uk-input home__block06__input" type="text" placeholder="Số điện thoại*">
+                </div>
+                <div class="uk-width-1-3@s">
+                    <input class="uk-input home__block06__input" type="text" placeholder="Trường THPT / Đại Học ">
+                </div>
+                <div class="uk-width-1-3@s">
+                    <input class="uk-input home__block06__input" type="text" placeholder="Ngày sinh">
+                </div>
+                <div class="uk-width-1-3@s">
+                    <input class="uk-input home__block06__input" type="text" placeholder="Email">
+                </div>
+                <div class="uk-width-1-3@s">
+                    <input class="uk-input home__block06__input" type="text" placeholder="Tỉnh / Thành phố">
+                </div>
+                <div class="uk-width-1-1">
+                    <input class="uk-input home__block06__input" type="text" placeholder="Link Facebook của bạn">
+                </div>
+            </div>
+        </div>
+        <div class="uk-margin">
+            <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                <div class="uk-width-1-5@m"><span class="home__block06__label">Đăng ký*</span></div>
+                <label><input class="uk-radio" type="radio" name="radio1"> <span class="home__block06__label">Tư vấn</span></label>
+                <label><input class="uk-radio" type="radio" name="radio1"> <span class="home__block06__label">Xét tuyển</span></label>
+                <label><input class="uk-radio" type="radio" name="radio1"> <span class="home__block06__label">Thi học bổng</span></label>
+                <label><input class="uk-radio" type="radio" name="radio1"> <span class="home__block06__label">Xét học bổng</span></label>
+            </div>
+            <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                <div class="uk-width-1-5@m"><span class="home__block06__label">Nơi đăng ký sơ tuyển:</span></div>
+                <label><input class="uk-radio" type="radio" name="radio2"> <span class="home__block06__label">Hà Nội</span></label>
+                <label><input class="uk-radio" type="radio" name="radio2"> <span class="home__block06__label">Tp.HCM</span></label>
+                <label><input class="uk-radio" type="radio" name="radio2"> <span class="home__block06__label">Cần Thơ</span></label>
+                <label><input class="uk-radio" type="radio" name="radio2"> <span class="home__block06__label">Đà Nẵng</span></label>
+            </div>
+        </div>
+        <div class="uk-margin-top uk-text-center">
+            <button class="home__block01__form__btn uk-button uk-button-secondary uk-border-pill"><span>ĐĂNG KÝ</span></button>
+        </div>
+    </div>
+</div>
+<div class="home__block07 uk-section">
+    <div class="uk-container">
+        <div class="uk-grid-small uk-grid-20-m uk-grid-match" uk-grid>
+            <div class="uk-width-2-5@m">
+                <img src="images/banner-emagazine-2-(1).jpeg" alt="">
+            </div>
+            <div class="uk-width-2-5@m">
+                <div class="uk-grid-small uk-grid-20-m uk-grid-match" uk-grid>
+                    <div class="uk-width-1-2">
+                        <div class="uk-grid-small uk-grid-20-m uk-grid-match" uk-grid>
+                            <div class="uk-width-1-1">
+                                <img src="images/DJI_0290.jpg" alt="">
+                            </div>
+                            <div class="uk-width-1-1">
+                                <img src="images/IMG_3489.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2">
+                        <img src="images/1x/luk2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-5@m">
+                <div class="uk-grid-small uk-grid-20-m uk-grid-match" uk-grid>
+                    <div class="uk-width-1-1@m uk-width-1-2">
+                        <img src="images/IMG_2400.jpg" alt="">
+                    </div>
+                    <div class="uk-width-1-1@m uk-width-1-2">
+                        <img src="images/IMG_2241.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<?php $ratio = 0.9; ?>
+<div class="footer uk-section-xsmall">
+    <div class="uk-container uk-container-small">
+        <div class="uk-flex-middle uk-child-width-auto uk-flex-between uk-grid-5" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div; delay: 300; repeat: false">
+            <div>
+                <div class="uk-flex-middle uk-grid-5 uk-grid-10-m" uk-grid>
+                    <div class="uk-width-auto">
+                        <a href="" class="uk-icon-button footer__icon" uk-icon="icon: mail; ratio: <?= $ratio ?>"></a>
+                    </div>
+                    <div class="uk-width-expand">
+                        <span class="footer__txt">daihocfpt@fpt.edu.vn</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="" class="uk-button footer__btn uk-button-default uk-button-large uk-border-pill">
+                    <div class="uk-flex-middle uk-grid-5 uk-grid-10-m" uk-grid>
+                        <div class="uk-width-auto">
+                            <span class="uk-icon-button footer__icon" uk-icon="icon: receiver; ratio: <?= $ratio ?>"></span>
+                        </div>
+                        <div class="uk-width-expand">
+                            <span class="footer__txt">024/028 73001866</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <div class="uk-flex-middle uk-grid-5 uk-grid-10-m" uk-grid>
+                    <div class="uk-width-auto">
+                        <a href="" class="uk-icon-button footer__icon" uk-icon="icon: facebook; ratio: <?= $ratio ?>"></a>
+                    </div>
+                    <div class="uk-width-expand">
+                        <span class="footer__txt">FPT University</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <?php require "template-parts/layouts/footer.php"; ?>

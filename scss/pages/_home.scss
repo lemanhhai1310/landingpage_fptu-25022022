@@ -32,6 +32,60 @@
       font-family: $font-BeVietnamPro-Regular;
     }
   }
+  &__block07{
+    background-color: #E2E4E4;
+  }
+  &__block06{
+    background-color: #B1360E;
+    &__card{
+      background-color: #E77126;
+      border-radius: 16px;
+      &__number{
+        color: #ffffff;
+        font-family: $font-Roboto-Bold;
+        //@extend .fz-38;
+        //line-height: (46/38);
+      }
+      &__label{
+        //@extend .fz-13;
+        //line-height: (16/13);
+        color: #ffffff;
+        //font-family: $font-Roboto-Bold;
+      }
+      &__separator{
+        color: #ffffff;
+      }
+    }
+    &__input{
+      @extend .fz-16;
+      line-height: (19/16);
+      font-family: $font-Roboto-LightItalic;
+      color: #575756;
+    }
+    &__label{
+      @extend .fz-16;
+      line-height: (19/16);
+      font-family: $font-Roboto-Medium;
+      color: #ffffff;
+    }
+  }
+  &__block05{
+    background-color: #E77126;
+    &__card{
+      border-radius: 40px;
+    }
+    &__txt1{
+      @extend .fz-16;
+      line-height: (19/16);
+      font-family: $font-Roboto-LightItalic;
+    }
+    &__txt2{
+      @extend .fz-16;
+      line-height: (19/16);
+      font-family: $font-Roboto-Bold;
+      color: #1D1D1B;
+    }
+  }
   &__block04{
     &__tab{
       &__li{
