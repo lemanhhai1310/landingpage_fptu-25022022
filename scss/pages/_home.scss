@@ -1,0 +1,97 @@
+.home{
+  &__header{
+    .uk-navbar-nav{
+      >li{
+        >a{
+          color: #ffffff;
+          @extend .fz-14;
+          font-family: $font-BeVietnamPro-Regular;
+        }
+        &:nth-child(n+2){
+          >a{
+            position: relative;
+            &:before{
+              content: "";
+              position: absolute;
+              top: 50%;
+              left: 0;
+              transform: translateY(-50%);
+              height: 15px;
+              border-left: 1px solid currentColor;
+            }
+          }
+        }
+      }
+    }
+    .uk-logo{
+      $x:20px;
+      border-radius: 0 0 #{$x} #{$x};
+    }
+    .uk-navbar-toggle{
+      color: #ffffff;
+      font-family: $font-BeVietnamPro-Regular;
+    }
+  }
+  &__block01{
+    @include media-breakpoint-up('m'){
+      min-height: 720px;
+    }
+    background-color: #E77126;
+    &__section{
+      padding-top: 120px;
+      @include media-breakpoint-up('m'){
+        padding-top: 70px;
+      }
+    }
+    &__form{
+      &__title{
+        @extend .fz-20;
+        font-family: $font-BeVietnamPro-Bold;
+        line-height: (24/20);
+        color: #E77126;
+      }
+      &__input{
+        @extend .fz-16;
+        color: #666666;
+      }
+      &__btn{
+        background: #E77126;
+        border-color: #E77126;
+        color: #ffffff;
+        &:hover{
+          background: #ffffff;
+          color: #E77126;
+        }
+        span{
+          @extend .fz-18;
+          font-family: $font-BeVietnamPro-Bold;
+        }
+      }
+    }
+    &__card{
+      //min-height: 465px;
+      @include media-breakpoint-up('m'){
+        border-radius: 40px;
+      }
+    }
+    &__boxitem1{
+      >*{
+        &:nth-child(n+2){
+          margin-top: 10px;
+        }
+      }
+    }
+    &__title{
+      color: #ffffff;
+      @extend .fz-42;
+      line-height: (50.4/42);
+      font-family: $font-BeVietnamPro-Black;
+    }
+    &__txt{
+      color: #ffffff;
+      @extend .fz-22;
+      line-height: (26.4/22);
+      font-family: $font-BeVietnamPro-SemiBold;
+    }
+  }
+}
