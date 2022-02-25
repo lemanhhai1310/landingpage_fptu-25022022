@@ -356,4 +356,123 @@
         </div>
     </div>
 </div>
+<div class="home__block03 uk-section-large">
+    <div class="uk-container">
+        <div class="uk-margin-medium uk-light">
+            <h2 class="home__block02__title uk-h2 uk-margin-remove uk-text-center">CHUYÊN NGÀNH ĐÀO TẠO</h2>
+        </div>
+        <div class="uk-margin-medium">
+            <div class="uk-flex-center" uk-grid>
+                <div class="uk-width-2-5@m">
+                    <div class="uk-margin-small">
+                        <div class="home__block03__box1 home__block03__box1--c1">
+                            <span>NGÀNH QUẢN TRỊ KINH DOANH</span>
+                        </div>
+                        <div class="home__block03__box1 home__block03__box1--c2 uk-background-default">
+                            <span>Mã ngành: 7340101 / Chỉ tiêu: 2150</span>
+                        </div>
+                    </div>
+                    <div class="uk-margin-small-top">
+                        <div class="uk-grid-small" uk-grid>
+                            <div class="uk-width-auto">
+                                <div data-src="images/1x/cn1.png" uk-img class="home__block03__cover uk-cover-container uk-border-rounded">
+                                    <canvas width="86" height="86"></canvas>
+                                </div>
+                            </div>
+                            <div class="uk-width-expand">
+                                <ul class="uk-list home__block03__list">
+                                    <li class="uk-margin-remove">• Digital Marketing</li>
+                                    <li class="uk-margin-remove">• Kinh doanh quốc tế</li>
+                                    <li class="uk-margin-remove">• Quản trị khách sạn</li>
+                                    <li class="uk-margin-remove">• Quản trị dịch vụ du lịch & lữ hành</li>
+                                    <li class="uk-margin-remove">• Quản trị truyền thông đa phương tiện</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-2-5@m">
+                    <div class="uk-margin-small">
+                        <div class="home__block03__box1 home__block03__box1--c1">
+                            <span>NGÀNH CÔNG NGHỆ THÔNG TIN</span>
+                        </div>
+                        <div class="home__block03__box1 home__block03__box1--c2 uk-background-default">
+                            <span>Mã ngành: 7340101 / Chỉ tiêu: 2150</span>
+                        </div>
+                    </div>
+                    <div class="uk-margin-small-top">
+                        <div class="uk-grid-small" uk-grid>
+                            <div class="uk-width-auto">
+                                <div data-src="images/1x/cn2.png" uk-img class="home__block03__cover uk-cover-container uk-border-rounded">
+                                    <canvas width="86" height="86"></canvas>
+                                </div>
+                            </div>
+                            <div class="uk-width-expand">
+                                <ul class="uk-list home__block03__list">
+                                    <li class="uk-margin-remove">• AI - Trí tuệ nhân tạo</li>
+                                    <li class="uk-margin-remove">• IoT - Internet vạn vật</li>
+                                    <li class="uk-margin-remove">• An toàn thông tin</li>
+                                    <li class="uk-margin-remove">• Kỹ thuật phần mềm</li>
+                                    <li class="uk-margin-remove">• Hệ thống thông tin</li>
+                                    <li class="uk-margin-remove">• Thiết kế Mỹ thuật số</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-3@m">
+                    <div class="uk-grid-collapse uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <div data-src="images/1x/cn3.png" uk-img class="home__block03__cover uk-cover-container uk-border-rounded">
+                                <canvas width="86" height="86"></canvas>
+                            </div>
+                        </div>
+                        <div class="uk-width-expand">
+                            <div class="home__block03__box1 home__block03__box1--c1">
+                                <span>NGÀNH NGÔN NGỮ ANH</span>
+                            </div>
+                            <div class="home__block03__box1 home__block03__box1--c2 uk-background-default">
+                                <span>Mã ngành: 7220201 / Chỉ tiêu: 650</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-3@m">
+                    <div class="uk-grid-collapse uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <div data-src="images/1x/cn4.png" uk-img class="home__block03__cover uk-cover-container uk-border-rounded">
+                                <canvas width="86" height="86"></canvas>
+                            </div>
+                        </div>
+                        <div class="uk-width-expand">
+                            <div class="home__block03__box1 home__block03__box1--c1">
+                                <span>NGÔN NGỮ NHẬT</span>
+                            </div>
+                            <div class="home__block03__box1 home__block03__box1--c2 uk-background-default">
+                                <span>Mã ngành: 7220201 / Chỉ tiêu: 650</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-3@m">
+                    <div class="uk-grid-collapse uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <div data-src="images/1x/cn5.png" uk-img class="home__block03__cover uk-cover-container uk-border-rounded">
+                                <canvas width="86" height="86"></canvas>
+                            </div>
+                        </div>
+                        <div class="uk-width-expand">
+                            <div class="home__block03__box1 home__block03__box1--c1">
+                                <span>NGÔN NGỮ HÀN QUỐC</span>
+                            </div>
+                            <div class="home__block03__box1 home__block03__box1--c2 uk-background-default">
+                                <span>Mã ngành: 7220201 / Chỉ tiêu: 650</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <?php require "template-parts/layouts/footer.php"; ?>

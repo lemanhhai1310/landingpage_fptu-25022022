@@ -32,6 +32,51 @@
       font-family: $font-BeVietnamPro-Regular;
     }
   }
+  &__block03{
+    background-color: #E77126;
+    $x:30px;
+    clip-path: polygon(100% 0, 100% calc(100% - #{$x}), 0 100%, 0 #{$x});
+    @include media-breakpoint-up('m'){
+      $x:60px;
+      clip-path: polygon(100% 0, 100% calc(100% - #{$x}), 0 100%, 0 #{$x});
+    }
+    &__list{
+      >li{
+        color: #ffffff;
+        @extend .fz-16;
+        line-height: (19/16);
+        font-family: $font-Roboto;
+      }
+    }
+    &__cover{
+      background-color: #FF8F00;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    &__box1{
+      min-height: 37px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &--c1{
+        background-color: #FFBA00;
+        span{
+          @extend .fz-18;
+          font-family: $font-BeVietnamPro-SemiBold;
+          color: #000;
+          text-transform: uppercase;
+        }
+      }
+      &--c2{
+        span{
+          @extend .fz-14;
+          font-family: $font-BeVietnamPro-Light;
+          color: #1D1D1B;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
   &__block02{
     &__box2{
       &__title{
