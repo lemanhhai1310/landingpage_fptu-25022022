@@ -14,6 +14,14 @@
           @extend .fz-14;
           font-family: $font-BeVietnamPro-Regular;
         }
+        &.uk-active{
+          >a{
+            color: #1D1D1B;
+            .uk-sticky-fixed &{
+              color: #E77126;
+            }
+          }
+        }
         &:nth-child(n+2){
           >a{
             position: relative;

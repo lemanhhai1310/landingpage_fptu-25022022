@@ -1,7 +1,7 @@
 <?php $data["title"] = "Trang chủ"; ?>
 <?php $body = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
-<div class="uk-position-relative">
+<div class="uk-position-relative" id="home">
     <div class="home__block01 uk-flex uk-flex-middle uk-background-center-center uk-background-norepeat" data-src="images/1x/bg1.png" uk-img>
         <div class="home__block01__section uk-section uk-width-1-1">
             <div class="uk-container">
@@ -65,7 +65,7 @@
                             <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
                         </a>
                         <ul uk-scrollspy-nav="closest: li; scroll: true" class="uk-navbar-nav uk-visible@m">
-                            <li><a href="#">TRANG CHỦ</a></li>
+                            <li><a href="#home">TRANG CHỦ</a></li>
                             <li><a href="#taisao">TẠI SAO CHỌN ĐH FPT?</a></li>
                             <li><a href="#tuyensinh">THÔNG BÁO TUYỂN SINH</a></li>
                             <li><a href="#daotao">CHUYÊN NGÀNH ĐÀO TẠO</a></li>
